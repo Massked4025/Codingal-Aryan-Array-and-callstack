@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <script>
+        var company = ["honda", "jeep", "toyota", "mitsubishi", "yamaha"]
+        document.getElementById ("id1").innerHTML = company[3]
+        document.getElementById ("id2").innerHTML = company.join(" $ ")
+        document.getElementById ("id3").innerHTML = company;
+        company.pop()
+        document.getElementById ("id4").innerHTML = company;
+
+        function add(a,b){
+            return a+b
+    }
+
+        function average(a,b){
+        return add(a,b)/2
+        }
+        let result = average(23,45)
+        document.write(result)
+    </script>
+</body>
+</html>
